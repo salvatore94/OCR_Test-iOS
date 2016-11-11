@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B37D304DBB54ECB4625C84B /* Pods_OCRtestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF38BCFC7A8DBB7B707F24E1 /* Pods_OCRtestUITests.framework */; };
+		616A379BFD64BFD9266153CC /* Pods_OCRtest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BC774B1A352611529855F61 /* Pods_OCRtest.framework */; };
+		9DD5D6A01DD6140A002BC53C /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = 9DD5D69F1DD6140A002BC53C /* tessdata */; };
 		9DF5E7141DD51EA00000BB50 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF5E7131DD51EA00000BB50 /* AppDelegate.swift */; };
 		9DF5E7161DD51EA00000BB50 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF5E7151DD51EA00000BB50 /* ViewController.swift */; };
 		9DF5E7191DD51EA00000BB50 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DF5E7171DD51EA00000BB50 /* Main.storyboard */; };
@@ -14,6 +17,7 @@
 		9DF5E71E1DD51EA00000BB50 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DF5E71C1DD51EA00000BB50 /* LaunchScreen.storyboard */; };
 		9DF5E7291DD51EA00000BB50 /* OCRtestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF5E7281DD51EA00000BB50 /* OCRtestTests.swift */; };
 		9DF5E7341DD51EA00000BB50 /* OCRtestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF5E7331DD51EA00000BB50 /* OCRtestUITests.swift */; };
+		B9B81960FA65E5BB30206F39 /* Pods_OCRtestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7939330386BE1DB60B776BD8 /* Pods_OCRtestTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		25D6396135CB6C50C8ABEAA3 /* Pods-OCRtest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCRtest.release.xcconfig"; path = "Pods/Target Support Files/Pods-OCRtest/Pods-OCRtest.release.xcconfig"; sourceTree = "<group>"; };
+		5BC774B1A352611529855F61 /* Pods_OCRtest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OCRtest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7939330386BE1DB60B776BD8 /* Pods_OCRtestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OCRtestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DD5D69F1DD6140A002BC53C /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
 		9DF5E7101DD51EA00000BB50 /* OCRtest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OCRtest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DF5E7131DD51EA00000BB50 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9DF5E7151DD51EA00000BB50 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +55,12 @@
 		9DF5E72F1DD51EA00000BB50 /* OCRtestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OCRtestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DF5E7331DD51EA00000BB50 /* OCRtestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCRtestUITests.swift; sourceTree = "<group>"; };
 		9DF5E7351DD51EA00000BB50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C66364A548DF472BA4B3812C /* Pods-OCRtestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCRtestTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OCRtestTests/Pods-OCRtestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C6F6221E828C9877643AAF91 /* Pods-OCRtestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCRtestTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OCRtestTests/Pods-OCRtestTests.release.xcconfig"; sourceTree = "<group>"; };
+		D411CCCABBEAF31077DA14A5 /* Pods-OCRtest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCRtest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OCRtest/Pods-OCRtest.debug.xcconfig"; sourceTree = "<group>"; };
+		DF38BCFC7A8DBB7B707F24E1 /* Pods_OCRtestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OCRtestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED19A101DC6BFE37BD65103E /* Pods-OCRtestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCRtestUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OCRtestUITests/Pods-OCRtestUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FD9456521120536FD9FD2F60 /* Pods-OCRtestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCRtestUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OCRtestUITests/Pods-OCRtestUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				616A379BFD64BFD9266153CC /* Pods_OCRtest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9B81960FA65E5BB30206F39 /* Pods_OCRtestTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +84,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B37D304DBB54ECB4625C84B /* Pods_OCRtestUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		20100DA12DC6A07F3A8306DD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D411CCCABBEAF31077DA14A5 /* Pods-OCRtest.debug.xcconfig */,
+				25D6396135CB6C50C8ABEAA3 /* Pods-OCRtest.release.xcconfig */,
+				C66364A548DF472BA4B3812C /* Pods-OCRtestTests.debug.xcconfig */,
+				C6F6221E828C9877643AAF91 /* Pods-OCRtestTests.release.xcconfig */,
+				FD9456521120536FD9FD2F60 /* Pods-OCRtestUITests.debug.xcconfig */,
+				ED19A101DC6BFE37BD65103E /* Pods-OCRtestUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		9DF5E7071DD51EA00000BB50 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +111,8 @@
 				9DF5E7271DD51EA00000BB50 /* OCRtestTests */,
 				9DF5E7321DD51EA00000BB50 /* OCRtestUITests */,
 				9DF5E7111DD51EA00000BB50 /* Products */,
+				20100DA12DC6A07F3A8306DD /* Pods */,
+				F27D3591272C8E9A3FD867DE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +133,7 @@
 				9DF5E7151DD51EA00000BB50 /* ViewController.swift */,
 				9DF5E7171DD51EA00000BB50 /* Main.storyboard */,
 				9DF5E71A1DD51EA00000BB50 /* Assets.xcassets */,
+				9DD5D69F1DD6140A002BC53C /* tessdata */,
 				9DF5E71C1DD51EA00000BB50 /* LaunchScreen.storyboard */,
 				9DF5E71F1DD51EA00000BB50 /* Info.plist */,
 			);
@@ -125,6 +158,16 @@
 			path = OCRtestUITests;
 			sourceTree = "<group>";
 		};
+		F27D3591272C8E9A3FD867DE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5BC774B1A352611529855F61 /* Pods_OCRtest.framework */,
+				7939330386BE1DB60B776BD8 /* Pods_OCRtestTests.framework */,
+				DF38BCFC7A8DBB7B707F24E1 /* Pods_OCRtestUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +175,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9DF5E7381DD51EA00000BB50 /* Build configuration list for PBXNativeTarget "OCRtest" */;
 			buildPhases = (
+				97B9CFFCDC2EC97BBFFF4C75 /* [CP] Check Pods Manifest.lock */,
 				9DF5E70C1DD51EA00000BB50 /* Sources */,
 				9DF5E70D1DD51EA00000BB50 /* Frameworks */,
 				9DF5E70E1DD51EA00000BB50 /* Resources */,
+				6BA8052147FCDBE89B7DBE0C /* [CP] Embed Pods Frameworks */,
+				C36E0488CEB00085CAB11874 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +195,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9DF5E73B1DD51EA00000BB50 /* Build configuration list for PBXNativeTarget "OCRtestTests" */;
 			buildPhases = (
+				D8DEE477D556A1578391DAF8 /* [CP] Check Pods Manifest.lock */,
 				9DF5E7201DD51EA00000BB50 /* Sources */,
 				9DF5E7211DD51EA00000BB50 /* Frameworks */,
 				9DF5E7221DD51EA00000BB50 /* Resources */,
+				A8274B8DC3B7CDE3063111EA /* [CP] Embed Pods Frameworks */,
+				35F4EDD86AAA88BDE29D5071 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +216,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9DF5E73E1DD51EA00000BB50 /* Build configuration list for PBXNativeTarget "OCRtestUITests" */;
 			buildPhases = (
+				846FCD23E774257F7C52AA53 /* [CP] Check Pods Manifest.lock */,
 				9DF5E72B1DD51EA00000BB50 /* Sources */,
 				9DF5E72C1DD51EA00000BB50 /* Frameworks */,
 				9DF5E72D1DD51EA00000BB50 /* Resources */,
+				DC826BAF0CCDDB3725EB33A5 /* [CP] Embed Pods Frameworks */,
+				BE676DDC80DF7F037E22B44A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -236,6 +288,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9DF5E71E1DD51EA00000BB50 /* LaunchScreen.storyboard in Resources */,
+				9DD5D6A01DD6140A002BC53C /* tessdata in Resources */,
 				9DF5E71B1DD51EA00000BB50 /* Assets.xcassets in Resources */,
 				9DF5E7191DD51EA00000BB50 /* Main.storyboard in Resources */,
 			);
@@ -256,6 +309,144 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		35F4EDD86AAA88BDE29D5071 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OCRtestTests/Pods-OCRtestTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6BA8052147FCDBE89B7DBE0C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OCRtest/Pods-OCRtest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		846FCD23E774257F7C52AA53 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		97B9CFFCDC2EC97BBFFF4C75 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A8274B8DC3B7CDE3063111EA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OCRtestTests/Pods-OCRtestTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE676DDC80DF7F037E22B44A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OCRtestUITests/Pods-OCRtestUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C36E0488CEB00085CAB11874 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OCRtest/Pods-OCRtest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D8DEE477D556A1578391DAF8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DC826BAF0CCDDB3725EB33A5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OCRtestUITests/Pods-OCRtestUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9DF5E70C1DD51EA00000BB50 /* Sources */ = {
@@ -336,12 +527,14 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -358,7 +551,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -385,14 +578,17 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -401,7 +597,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -411,11 +607,21 @@
 		};
 		9DF5E7391DD51EA00000BB50 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D411CCCABBEAF31077DA14A5 /* Pods-OCRtest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = AT2W83BFC8;
 				INFOPLIST_FILE = OCRtest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-weak_library",
+					"/usr/lib/libstdc++.6.0.9.dylib",
+					"-l\"stdc++\"",
+					"-framework",
+					"\"TesseractOCR\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = salvatorepolito.OCRtest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -424,11 +630,21 @@
 		};
 		9DF5E73A1DD51EA00000BB50 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25D6396135CB6C50C8ABEAA3 /* Pods-OCRtest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = AT2W83BFC8;
 				INFOPLIST_FILE = OCRtest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-weak_library",
+					"/usr/lib/libstdc++.6.0.9.dylib",
+					"-l\"stdc++\"",
+					"-framework",
+					"\"TesseractOCR\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = salvatorepolito.OCRtest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -437,6 +653,7 @@
 		};
 		9DF5E73C1DD51EA00000BB50 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C66364A548DF472BA4B3812C /* Pods-OCRtestTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -452,6 +669,7 @@
 		};
 		9DF5E73D1DD51EA00000BB50 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6F6221E828C9877643AAF91 /* Pods-OCRtestTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -467,6 +685,7 @@
 		};
 		9DF5E73F1DD51EA00000BB50 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD9456521120536FD9FD2F60 /* Pods-OCRtestUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = AT2W83BFC8;
@@ -481,6 +700,7 @@
 		};
 		9DF5E7401DD51EA00000BB50 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED19A101DC6BFE37BD65103E /* Pods-OCRtestUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = AT2W83BFC8;
@@ -512,6 +732,7 @@
 				9DF5E73A1DD51EA00000BB50 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9DF5E73B1DD51EA00000BB50 /* Build configuration list for PBXNativeTarget "OCRtestTests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +741,7 @@
 				9DF5E73D1DD51EA00000BB50 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9DF5E73E1DD51EA00000BB50 /* Build configuration list for PBXNativeTarget "OCRtestUITests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +750,7 @@
 				9DF5E7401DD51EA00000BB50 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
