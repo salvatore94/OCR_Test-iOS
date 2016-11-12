@@ -13,20 +13,14 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
 
     
     @IBOutlet weak var imageView: UIImageView!
-    
-    var tesseract : G8Tesseract = G8Tesseract(language:"ita")
-    
+    var imm = UIImage()
     
     override func viewDidLoad() {
         super.viewDidLoad()
     
-        
-        tesseract.delegate = self
-        tesseract.charWhitelist = "01234567890";
     }
 
     @IBAction func catturaFoto(_ sender: Any) {
-        
         if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.camera) {
             let imagePicker = UIImagePickerController()
             imagePicker.delegate = self
@@ -39,7 +33,6 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     }
 
     @IBAction func apriGalleria(_ sender: Any) {
-        
         if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.photoLibrary) {
             let imagePicker = UIImagePickerController()
             imagePicker.delegate = self
@@ -47,12 +40,12 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             imagePicker.allowsEditing = true
             
             present(imagePicker, animated: true, completion: nil)
-            
         }
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         if let pickedImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
+            imm = pickedImage as UIImage
             imageView.contentMode = UIViewContentMode.scaleAspectFit
             imageView.image = pickedImage
             
@@ -65,32 +58,70 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     }
     
     @IBAction func ocrFunc(_ sender: Any) {
-        if imageView.image != nil {
-            tesseract.charWhitelist = "01234567890";
-            tesseract.image = imageView.image! as UIImage
-            tesseract.image.g8_blackAndWhite()
-            
-            tesseract.recognize();
-    
-            NSLog("%@", tesseract.recognizedText);
-            
-            let myStoryboard = UIStoryboard(name: "Main", bundle: nil)
-            let ocrView : UIViewController = myStoryboard.instantiateViewController(withIdentifier: "ocrView") as UIViewController
-            var textV = ocrView.view.viewWithTag(3) as! UITextView
-            
-            textV.text = tesseract.recognizedText
-            self.present(ocrView, animated: true, completion: nil)
-            
+        if self.imageView.image != nil {
+            let imageScaled = scaleImage(image: imm, maxDimension: 640)
+            let recognized = imageRecognition(image: imageScaled)
+            preparaOCRView(recognizedText: recognized)
         }
+        
+    }
+    
+
+    func imageRecognition (image: UIImage) -> String {
+        let tesseract1 = G8Tesseract(language: "ita")
+        tesseract1?.delegate = self
+        tesseract1?.engineMode = G8OCREngineMode.cubeOnly
+        tesseract1?.pageSegmentationMode = G8PageSegmentationMode.auto
+        tesseract1?.image = image as UIImage
+        tesseract1?.image.g8_blackAndWhite()
+        tesseract1?.charBlacklist = "0123456789-"
+        
+        tesseract1?.recognize()
+        return (tesseract1?.recognizedText)!
+    }
+    
+    func preparaOCRView (recognizedText: String) {
+        let myStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let ocrView : UIViewController = myStoryboard.instantiateViewController(withIdentifier: "ocrView") as UIViewController
+        let textV = ocrView.view.viewWithTag(3) as! UITextView
+        
+        textV.text = recognizedText
+        self.present(ocrView, animated: true, completion: nil)
+    }
+    
+    func scaleImage(image: UIImage, maxDimension: CGFloat) -> UIImage {
+        var scaledSize = CGSize(width: maxDimension, height: maxDimension)
+        var scaleFactor: CGFloat
+        
+        if image.size.width > image.size.height {
+            scaleFactor = image.size.height / image.size.width
+            scaledSize.width = maxDimension
+            scaledSize.height = scaledSize.width * scaleFactor
+        } else {
+            scaleFactor = image.size.width / image.size.height
+            scaledSize.height = maxDimension
+            scaledSize.width = scaledSize.height * scaleFactor
+        }
+        
+        UIGraphicsBeginImageContext(scaledSize)
+        image.draw(in: CGRect(x: 0, y: 0, width: scaledSize.width, height: scaledSize.height))
+        let scaledImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        
+        return scaledImage!
+    }
+    
+    func progressImageRecognition(for tesseract1: G8Tesseract!) {
+        print("Recognition Progress \(tesseract1.progress) %")
+    }
+    
+    func shouldCancelImageRecognitionForTesseract(for tesseract: G8Tesseract!) -> Bool {
+        return false; // return true if you need to interrupt tesseract before it finishes
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-
-    func shouldCancelImageRecognitionForTesseract(tesseract: G8Tesseract!) -> Bool {
-        return false; // return true if you need to interrupt tesseract before it finishes
     }
     
 }
